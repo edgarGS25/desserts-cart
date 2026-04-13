@@ -42,10 +42,7 @@ export default function Dessert({dessert, cart, addToCart, decrementQuantity, in
                                     <img src={iconIncrement} alt="icono de incrementar cantidad" className="w-full object-cover"/>
                                 </figure>
                             </button>
-                        </>
-                    
-                        
-
+                        </> 
                 ) : (
                     <>
                         <button 
@@ -61,7 +58,7 @@ export default function Dessert({dessert, cart, addToCart, decrementQuantity, in
             <div className="relative bg-transparent mt-8">
                 
                 <p>{dessert.category}</p>
-                <h3 className="mt-4 text-lg font-medium text-gray-900" id="name">{dessert.name}</h3>
+                <h2 className="mt-4 text-lg font-medium text-gray-900" id="name">{dessert.name}</h2>
 
                 <p className="mt-1.5 text-sm text-orange-700" id="price">{formatCurrency(dessert.price)}</p>
 
